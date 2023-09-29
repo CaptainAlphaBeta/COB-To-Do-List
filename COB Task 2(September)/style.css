@@ -1,0 +1,103 @@
+body{
+  font-family: 'Oswald', sans-serif;
+  background-image: linear-gradient(
+  216deg,
+  hsl(315deg 88% 57%) 0%,
+  hsl(298deg 61% 62%) 29%,
+  hsl(268deg 76% 72%) 43%,
+  hsl(251deg 58% 68%) 57%,
+  hsl(251deg 27% 48%) 71%,
+  hsl(0deg 0% 0%) 100%
+);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-s;
+  height: 200vh;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Lobster two', cursive;
+  font-size: 300%;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.new-todo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+input {
+  width: 40%;
+  margin-right: 10px;
+  height: 5vh;
+  border-radius: 8px;
+}
+
+button {
+  width: 10vh;
+  height: 5vh;
+  background-color: steelblue;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.todo-list {
+  list-style-type: none;
+  padding: 0;
+  width: 50%;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.todo-list li {
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+}
+
+.todo-list li:last-child {
+  border-bottom: none;
+}
+
+.todo-list li.completed {
+  text-decoration: line-through;
+  color: black;
+}
+
+.todo-list li.completed input {
+  background-color: #ccc;
+}
+
+.todo-list li button {
+  cursor: not-allowed;
+}
+
+#clear-all {
+  margin-top: 10px;
+  width: 15vh;
+  height: 7vh;
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
